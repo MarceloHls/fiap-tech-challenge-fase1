@@ -7,13 +7,16 @@ from api.models import Book, Base, UserDB
 if not os.path.exists("data"):
     os.makedirs("data")
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 if os.environ.get("VERCEL"):
+    REPO_DATA_PATH = os.path.join(BASE_DIR, "data", "books.csv")
+    TMP_DATA_PATH = "/tmp/books.csv"
+    DATA_PATH = TMP_DATA_PATH if os.path.exists(TMP_DATA_PATH) else REPO_DATA_PATH
     DB_URL = "sqlite:////tmp/users.db"
-    DATA_PATH = "/tmp/books.csv" # O scraper também precisará salvar aqui
 else:
+    DATA_PATH = os.path.join(BASE_DIR, "data", "books.csv")
     DB_URL = "sqlite:///./data/users.db"
-    DATA_PATH = "data/books.csv"
 
 
 engine = create_engine(DB_URL, connect_args={"check_same_thread": False})
