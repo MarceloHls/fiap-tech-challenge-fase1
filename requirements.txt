@@ -1,0 +1,17 @@
+# Extração de Dados (Web Scraping)
+requests
+beautifulsoup4
+pandas
+
+# Framework da API (FastAPI)
+fastapi
+uvicorn
+
+# Utilitários
+python-dotenv
+
+# JWT
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+sqlalchemy
