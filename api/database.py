@@ -7,8 +7,14 @@ from api.models import Book, Base, UserDB
 if not os.path.exists("data"):
     os.makedirs("data")
 
-DATA_PATH = "data/books.csv"
-DB_URL = "sqlite:///./data/users.db"
+
+if os.environ.get("VERCEL"):
+    DB_URL = "sqlite:////tmp/users.db"
+    DATA_PATH = "/tmp/books.csv" # O scraper também precisará salvar aqui
+else:
+    DB_URL = "sqlite:///./data/users.db"
+    DATA_PATH = "data/books.csv"
+
 
 engine = create_engine(DB_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
