@@ -6,7 +6,7 @@ Este projeto é o Tech Challenge da Fase 1 da Pós-Tech (FIAP). O objetivo é cr
 ---
 
 ## Plano Arquitetural e Fluxo de Dados
-![Fluxo do Projeto](fluxo_local.drawio.png)
+![Fluxo do Projeto](fluxo_local_sem_fundo.png)
 
 O diagrama acima descreve o pipeline de dados, estruturado para suportar futuras implementações de Machine Learning:
 
