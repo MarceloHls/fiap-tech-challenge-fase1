@@ -39,7 +39,7 @@ venv.bak/
 # Ignoramos o banco de usuários para não subir dados sensíveis ou locais
 data/*.db
 
-# data/*.csv
+data/*.csv
 
 # Spyder project settings
 .spyderproject
