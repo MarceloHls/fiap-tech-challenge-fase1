@@ -3,6 +3,8 @@
 ## Descrição do Projeto
 Este projeto é o Tech Challenge da Fase 1 da Pós-Tech (FIAP). O objetivo é criar um pipeline de dados completo: Web Scraping, armazenamento em CSV e uma API para consulta.
 
+> **Link para a API em Produção:** [https://fiap-tech-challenge-fase1.vercel.app/docs](https://fiap-tech-challenge-fase1.vercel.app/docs)
+
 ---
 
 ## Plano Arquitetural e Fluxo de Dados
