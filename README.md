@@ -5,7 +5,7 @@ Este projeto é o Tech Challenge da Fase 1 da Pós-Tech (FIAP). O objetivo é cr
 
 > **Link para a API em Produção:** [https://fiap-tech-challenge-fase1.vercel.app/docs](https://fiap-tech-challenge-fase1.vercel.app/docs)
 
-> **Vídeo de Apresentação em Produção:** [[loom.com/share/3fcf728038be4acabed35343b87c9f03](loom.com/share/3fcf728038be4acabed35343b87c9f03)](https://www.loom.com/share/3fcf728038be4acabed35343b87c9f03)
+> **Vídeo de Apresentação em Produção:** (https://www.loom.com/share/3fcf728038be4acabed35343b87c9f03)
 
 ---
 
